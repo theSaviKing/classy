@@ -1,0 +1,26 @@
+extends layout.pug
+
+block content
+    .w-screen.h-screen.flex-center-col.space-y-8
+        h1.text-3xl Log in &mdash; #[span.italic.font-bold.text-primary classy]
+        form(method="POST" action="{{ url_for('login') }}").card.rounded-xl.bg-base-200.p-6.space-y-6.flex-center-col
+            .form-control
+                label.label
+                    span.label-text Username
+                label.input-group
+                    input(type="text" placeholder="jamsmith25" class="input placeholder:italic" name="username" required)
+                    span @ahastars.org
+            .form-control.w-full
+                label.label
+                    span.label-text Password
+                label.input-group
+                    input(type="password" placeholder="my_53cur3_p455w0RD" class="input placeholder:italic w-full" name="password" required)
+            button(type="submit").btn.btn-primary.btn-outline Log In
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        {% for category, message in messages %}
+        div(class="alert alert-{{category}} m-4")
+            {{ message }}
+        {% endfor %}
+        {% endif %}
+        {% endwith %}

@@ -1,0 +1,33 @@
+{
+  "name": "classy",
+  "version": "1.0.0",
+  "description": "A class, schedule, and assignment manager for students",
+  "main": "main.py",
+  "dependencies": {
+    "autoprefixer": "^10.4.2",
+    "daisyui": "^1.25.4",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.18",
+    "theme-change": "^2.0.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.2.1",
+    "@parcel/transformer-webmanifest": "^2.2.1",
+    "@parcel/transformer-xml": "^2.2.1"
+  },
+  "source": "./*",
+  "scripts": {
+    "buildcss": "npx tailwindcss -i static/css/input.css -o static/css/tailwind.css",
+    "buildcss-dev": "npm run buildcss -- --minify",
+    "buildcss-watch": "npm run buildcss -- --watch",
+    "buildcss-prod": "npm run buildcss-dev -- --watch",
+    "dev": "npx parcel watch",
+    "build": "npx parcel build"
+  },
+  "keywords": [],
+  "author": "T. Paul Kariuki",
+  "license": "MIT",
+  "directories": {
+    "lib": "lib"
+  }
+}
