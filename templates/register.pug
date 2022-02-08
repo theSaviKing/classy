@@ -1,1 +1,21 @@
 extends layout.pug
+
+block content
+    .w-screen.h-screen.flex-center-col.space-y-8
+        h1.text-3xl Create an Account &mdash; #[span.italic.font-bold.text-primary classy]
+        form(method="POST" action="{{ url_for('login') }}").card.rounded-xl.bg-base-200.p-6.space-y-6.flex-center-col
+            .form-control
+                label.label
+                    span.label-text Enter a username
+                label.input-group
+                    input(type="text" placeholder="jamsmith25" class="input placeholder:italic" name="username" required)
+                    span @ahastars.org
+            button(type="submit").btn.btn-primary.btn-outline Register
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        {% for category, message in messages %}
+        div(class="alert alert-{{category}} m-4")
+            {{ message }}
+        {% endfor %}
+        {% endif %}
+        {% endwith %}

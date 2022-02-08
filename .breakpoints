@@ -4,62 +4,62 @@
       {
         "id": "f3fb0fc7-e858-4c4d-8384-27e66ed698bb",
         "line": 1,
-        "version": 1518,
+        "version": 1519,
         "index": 77
       },
       {
         "id": "27859b83-dcc4-40dc-9d61-ed2189809697",
         "line": 1,
-        "version": 1518,
+        "version": 1519,
         "index": 77
       },
       {
         "id": "1da202c3-42ec-4a9a-af75-c0d5613225c8",
         "line": 20,
-        "version": 1518,
+        "version": 1519,
         "index": 601
       },
       {
         "id": "057b9e54-28a8-485e-910b-652682906d22",
         "line": 23,
-        "version": 1518,
+        "version": 1519,
         "index": 762
       },
       {
         "id": "695cdbf3-43ed-4e38-8087-4ef2733400b5",
         "line": 24,
-        "version": 1518,
+        "version": 1519,
         "index": 805
       },
       {
         "id": "5717fc81-8e53-4b62-8fac-8bf4536c61b3",
         "line": 33,
-        "version": 1518,
+        "version": 1519,
         "index": 1201
       },
       {
         "id": "14949b15-ea5a-4db6-b3ce-0a1e868cb430",
-        "line": 39,
-        "version": 1518,
-        "index": 1435
+        "line": 36,
+        "version": 1519,
+        "index": 1302
       },
       {
         "id": "d2d3d47b-f737-4176-9f0d-c056f2c523a9",
-        "line": 43,
-        "version": 1518,
-        "index": 1483
+        "line": 40,
+        "version": 1519,
+        "index": 1350
       },
       {
         "id": "97389269-946a-4c5e-8b17-46418f24d50d",
-        "line": 43,
-        "version": 1518,
-        "index": 1483
+        "line": 40,
+        "version": 1519,
+        "index": 1350
       },
       {
         "id": "6ea419a8-c1e2-453b-b21b-032ecc91c236",
-        "line": 43,
-        "version": 1518,
-        "index": 1483
+        "line": 40,
+        "version": 1519,
+        "index": 1350
       }
     ],
     "static/css/input.css": [
@@ -174,6 +174,12 @@
     ],
     "templates/login.pug": [
       {
+        "id": "089e872a-737a-4bd7-991b-6bea2a36d026",
+        "line": 3,
+        "version": 2514,
+        "index": 20
+      },
+      {
         "id": "5eb2c03e-be95-48b3-943d-82470aa081bd",
         "line": 22,
         "version": 2514,
@@ -184,6 +190,14 @@
         "line": 22,
         "version": 2514,
         "index": 1121
+      }
+    ],
+    "templates/register.pug": [
+      {
+        "id": "ee9b06cd-e4e0-4af3-85d6-069c90e6f612",
+        "line": 13,
+        "version": 35,
+        "index": 587
       }
     ],
     "templates/storage.js": [

@@ -32,7 +32,7 @@ def login():
 def register():
     if request.method == "POST":
         pass
-    return render_template('register.pug', title="Log In")
+    return render_template('register.pug', title="Register")
 
 @app.route('/student')
 def student():
